@@ -15,7 +15,7 @@ To run PocketGPT on your board, follow the [installation guide](../docs/ASSETS.m
 
 **Base V2** is the internal name for the second version of the base model, before later training and refinement.
 
-## Main training run
+## Main training run: Base V2 (300M tokens)
 
 | Setting | Value |
 |---|---|
@@ -42,11 +42,7 @@ The total is 58,594 updates × 32 sequences × 160 positions. It counts processe
 | `pocketlm/training/audit_friend_base_v2_training_stream_v1.py` | Check training inputs and construct the fixed sampling schedule |
 | `checkpoints/_audit_friend_base_v2_training_stream_v1/schedule_spec.json` | Saved sampling schedule |
 | `pocketlm/quantization/kv_cache_int8.py` | Cache implementation required by the model code |
-| `pocketlm/training/train_pretrain_30m.py` | Earlier approximately 50M-token general-text experiment |
-| `pocketlm/training/train_friend_base_30m.py`, `friend_base_v1_config.py` | Separate earlier Friend Base v1 experiment |
 | `pocketlm/training/benchmark_training.py` | Measure training performance using random token inputs |
-
-The earlier experiments are included for reference; they are separate from the main 300M-token Base V2 run. Original filenames are retained so imports and historical records remain traceable.
 
 ## Inspect the training script
 
@@ -89,6 +85,20 @@ These original scripts document how the base model was trained. An exact repeat 
 - The complete sequence of later refinement and export steps.
 
 Training again with different inputs or software may produce different weights. **These limitations concern repeating the training process; the released weights and tokenizer are available for running the existing model.** See [data provenance](../docs/DATA_PROVENANCE.md) for the remaining details. Dataset downloads and redistribution are subject to each source's license; a download script does not itself grant permission to redistribute the data.
+
+<details>
+<summary>Earlier experiments</summary>
+
+These experiments are included for reference; they are separate from the main 300M-token Base V2 run.
+
+| Files | Purpose |
+|---|---|
+| `pocketlm/training/train_pretrain_30m.py` | Earlier approximately 50M-token general-text experiment |
+| `pocketlm/training/train_friend_base_30m.py`, `friend_base_v1_config.py` | Separate earlier Friend Base v1 experiment |
+
+Original filenames are retained so imports and historical records remain traceable.
+
+</details>
 
 <details>
 <summary>Historical verification and source-file details</summary>
