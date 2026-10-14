@@ -41,7 +41,7 @@ The XIAO tests took about 6.4 seconds for `hello` and 11.8 seconds for `how are 
 | Tokenizer | SentencePiece; 6,144 tokens |
 | Runtime limits | 64-token context; up to 24 generated tokens per response |
 | Recorded generation speed | DevKit: about 1.41 tokens/s; XIAO: about 0.742 tokens/s |
-| Deployment size | DevKit: 20,241,616 bytes; XIAO: 21,706,088 bytes |
+| Deployment files | DevKit: 20,241,616-byte deduplicated pack. XIAO: 21,717,088 bytes of model weights across Flash, PSRAM-loaded data and microSD; cache and tokenizer files are separate. See [the exact XIAO layout](docs/MODEL_CARD.md#xiao-storage-layout). |
 
 Speeds are individual measurements, not guarantees. The packages use different mixed-precision layouts. See [model and quantization details](docs/MODEL_CARD.md).
 
