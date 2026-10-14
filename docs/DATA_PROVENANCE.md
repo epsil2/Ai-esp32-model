@@ -32,7 +32,7 @@ A script's configured inputs alone do not prove every source was included in the
 
 ## Publication decision
 
-The author’s code remains MIT. On 2026-10-13 the author also selected a separate MIT grant for released deployment weights and tokenizer artifacts, to the extent of the author’s rights. They are available as [release packages](ASSETS.md); preserve [attribution and uncertainty disclosures](MODEL_RELEASE_NOTES.md). Availability of exact deployment files does not resolve all historical data reconstruction questions. This inventory does not establish that model redistribution is prohibited. In particular, [CDLA-Sharing-1.0 section 3.5](https://cdla.dev/sharing-1-0/) distinguishes computational Results from redistributed Data; a dataset's sharing terms must not automatically be presented as the model's license.
+My original code remains under MIT. On 2026-10-13 I also chose a separate MIT grant for the released deployment weights and tokenizer artifacts, within the rights I hold. They are available as [release packages](ASSETS.md); preserve [attribution and uncertainty disclosures](MODEL_RELEASE_NOTES.md). Availability of exact deployment files does not resolve all historical data reconstruction questions. This inventory does not establish that model redistribution is prohibited. In particular, [CDLA-Sharing-1.0 section 3.5](https://cdla.dev/sharing-1-0/) distinguishes computational Results from redistributed Data; a dataset's sharing terms must not automatically be presented as the model's license.
 
 Outstanding concrete items:
 

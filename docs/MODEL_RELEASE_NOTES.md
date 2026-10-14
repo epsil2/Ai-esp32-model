@@ -1,6 +1,8 @@
 # Model and tokenizer release notes
 
-Release: v0.1.0-model-assets. Author: mmm1712. The author selected MIT on 2026-10-13 for the released model weights and tokenizer, to the extent of the author's rights. See MODEL_LICENSE. This does not relicense source datasets or third-party materials. No training corpus, firmware executable or whole-board backup is distributed in these asset packages.
+Release: v0.1.0-model-assets.
+
+I'm releasing the model weights and tokenizer under MIT, within the rights I hold. I (mmm1712) chose this license on 2026-10-13. See [MODEL_LICENSE](../MODEL_LICENSE). This does not relicense source datasets or third-party materials. No training corpus, firmware executable or whole-board backup is distributed in these asset packages.
 
 ## Dataset attribution
 

@@ -1,6 +1,6 @@
 # How PocketGPT was trained
 
-This folder contains the original Python code used to define the PocketGPT model, prepare data, train its tokenizer and train the base model from random initialization.
+I've included the original Python code I used to define the PocketGPT model, prepare data, train its tokenizer and train the base model from random initialization.
 
 To run PocketGPT on your board, follow the [installation guide](../docs/ASSETS.md). The model weights and tokenizer are available in [GitHub Releases](https://github.com/mmm1712/Local_AI_esp32/releases/tag/v0.1.0-model-assets).
 

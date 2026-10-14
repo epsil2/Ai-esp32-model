@@ -1,6 +1,6 @@
 # Contributing
 
-Small fixes, clearer docs, and bug reports are welcome. Keep each pull request focused on one change. For a bigger change, open an issue first so we can discuss it.
+I welcome fixes, clearer docs, and bug reports. Keep each pull request focused on one change. For a bigger change, open an issue first so we can discuss it.
 
 ## Find the right code
 
