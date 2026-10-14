@@ -53,6 +53,10 @@ The [original training code and settings](training/README.md) are included. **Ba
 
 The [network interface](docs/NETWORK_SETUP.md) uses the same XIAO/display hardware, but runs a different firmware. Answers come from Gemini's servers or Ollama on your PC. This option does not use PocketGPT's weights.
 
+## Serial testing
+
+The serial test requires a nonempty reply and generation statistics with a positive token count. Explicit inference failures or incomplete responses make the command exit with an error. Completed response transcripts are saved in `results.json` with `ok` and `error` fields before validation errors are raised; later prompts are not sent after a failure. Passing confirms generation completed, not that the answer is factually correct.
+
 ## Reference
 
 - [Build reference](docs/BUILD.md) · [Validation results](docs/RELEASE_STATUS.md)
