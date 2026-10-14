@@ -1,6 +1,6 @@
 # Model and tokenizer provenance review
 
-Reviewed 2026-10-13. This is an evidence inventory, not a blanket grant of rights to all artifacts. No dataset text or training corpus is distributed here.
+Reviewed 2026-10-13. This inventory records the inspected training sources. No dataset text or training corpus is distributed here.
 
 ## Selected tied model
 
@@ -28,15 +28,16 @@ The source manifest's hash and the exact inspected script hashes are retained in
 
 The saved tokenizer metadata names a local combined corpus. Its corpus-builder script targets TinyStories, FineWeb-Edu, OASST1, **[Dolly-15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k)** and **[GSM8K](https://huggingface.co/datasets/openai/gsm8k)**. The latter cards state CC-BY-SA-3.0 and MIT respectively.
 
-A script's configured inputs alone do not prove every source was included in the exact saved corpus. A matching execution log or frozen source manifest for this tokenizer was not found in the inspected tokenizer directory. Do not omit these possible sources, but do not advertise their inclusion as established fact either. SentencePiece software licensing does not automatically determine the license of trained tokenizer artifacts.
+A script's configured inputs alone do not prove every source was included in the exact saved corpus. A matching execution log or frozen source manifest for this tokenizer was not found in the inspected tokenizer directory. Dolly and GSM8K remain possible sources, not confirmed inputs.
 
-## Publication decision
+## Model availability
 
-The author’s code remains MIT. On 2026-10-13 the author also selected a separate MIT grant for released deployment weights and tokenizer artifacts, to the extent of the author’s rights. They are available as [release packages](ASSETS.md); preserve [attribution and uncertainty disclosures](MODEL_RELEASE_NOTES.md). Availability of exact deployment files does not resolve all historical data reconstruction questions. This inventory does not establish that model redistribution is prohibited. In particular, [CDLA-Sharing-1.0 section 3.5](https://cdla.dev/sharing-1-0/) distinguishes computational Results from redistributed Data; a dataset's sharing terms must not automatically be presented as the model's license.
+The trained weights and tokenizer are available as [release packages](ASSETS.md). See [license details](../LICENSE_STATUS.md) and [source attribution](MODEL_RELEASE_NOTES.md).
 
-Outstanding concrete items:
+## Remaining training records
+
+Some historical dataset versions and training records remain unconfirmed. This affects exact reproduction of the training run; the released model files are available for deployment.
 
 1. Identify the historical TinyStories/FineWeb-Edu downloads used by the general corpus.
 2. Recover or reconstruct the exact tokenizer-corpus source manifest, including whether Dolly/GSM8K were actually used.
 3. Confirm authorship/provenance of local repair examples and retain required source attribution.
-4. Keep the separately selected MODEL_LICENSE and dataset notices with redistributed assets; do not apply it to the training datasets or unrelated model weights.

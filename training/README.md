@@ -84,7 +84,7 @@ These original scripts document how the base model was trained. An exact repeat 
 - The exact versions of all libraries used for the original run.
 - The complete sequence of later refinement and export steps.
 
-Training again with different inputs or software may produce different weights. **These limitations concern repeating the training process; the released weights and tokenizer are available for running the existing model.** See [data provenance](../docs/DATA_PROVENANCE.md) for the remaining details. Dataset downloads and redistribution are subject to each source's license; a download script does not itself grant permission to redistribute the data.
+Training again with different inputs or software may produce different weights. **These limitations concern repeating the training process; the released weights and tokenizer are available for running the existing model.** See [data provenance](../docs/DATA_PROVENANCE.md) for data sources, their terms and the remaining gaps.
 
 <details>
 <summary>Earlier experiments</summary>
