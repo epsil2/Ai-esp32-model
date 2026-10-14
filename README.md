@@ -2,7 +2,7 @@
 
 ![PocketGPT handheld device with its touchscreen keyboard and a recorded answer](docs/images/pocketgpt-device.jpg)
 
-I trained PocketGPT from scratch and got it running offline on an ESP32-S3. You can use a touchscreen keyboard on XIAO or chat over USB on DevKit.
+A language model trained from scratch and running offline on an ESP32-S3. Use a touchscreen keyboard on XIAO or chat over USB on DevKit.
 
 [Watch the project video](https://youtu.be/LgCNVUndTH8) · [Hardware on Amazon](https://amzn.to/4B00LyJ)
 
@@ -19,7 +19,7 @@ Start with the shared preparation steps at the top of the [installation guide](d
 
 ## What can PocketGPT actually do?
 
-This is my personal experiment with limited capabilities. It can produce short greetings and basic conversational replies, but answers can be wrong, repetitive or unrelated. Even basic arithmetic is unreliable.
+This is a personal experiment with limited capabilities. It can produce short greetings and basic conversational replies, but answers can be wrong, repetitive or unrelated. Even basic arithmetic is unreliable.
 
 These are recorded hardware outputs:
 
@@ -47,7 +47,7 @@ Speeds are individual measurements, not guarantees. The packages use different m
 
 ## Training
 
-I've included my [original training code and settings](training/README.md). **Base V2** names the second base-model version, trained from random initialization on about 300 million token positions before later refinement. Exact historical retraining requires additional data and records described in that guide.
+The [original training code and settings](training/README.md) are included. **Base V2** names the second base-model version, trained from random initialization on about 300 million token positions before later refinement. Exact historical retraining requires additional data and records described in that guide.
 
 ## Optional: Gemini or Ollama
 
