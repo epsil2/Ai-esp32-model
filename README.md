@@ -59,7 +59,7 @@ After installing PocketGPT on a DevKit, follow the [USB test instructions](docs/
 
 ## Reference
 
-- [Contributing and reporting bugs](CONTRIBUTING.md)
+- [Contributing and reporting bugs](docs/contributing-guide.md)
 - [Build reference](docs/BUILD.md) · [Validation results](docs/RELEASE_STATUS.md)
 - [Data sources](docs/DATA_PROVENANCE.md) · [Privacy](docs/PRIVACY.md)
 - [MIT license and third-party notices](LICENSE_STATUS.md)

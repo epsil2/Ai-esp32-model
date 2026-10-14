@@ -8,7 +8,7 @@ Small fixes, clearer docs, and bug reports are welcome. Keep each pull request f
 - `xiao_ai/keyboard_interfaces/xiao_local`: offline inference on XIAO with the Round Display and microSD.
 - `xiao_ai/keyboard_interfaces/xiao_network`: the separate Gemini/Ollama interface.
 - `tools` and `tests`: packaging, verification, and serial testing.
-- `training`: historical training scripts. Read the [training guide](training/README.md) before running them; some required inputs are not included.
+- `training`: historical training scripts. Read the [training guide](../training/README.md) before running them; some required inputs are not included.
 
 ## Check your change
 
@@ -23,7 +23,7 @@ git diff --check
 
 For docs-only changes, check the preview and make sure the links work. You don't need to build firmware for those.
 
-For firmware changes, follow the [build guide](docs/BUILD.md) for the board you changed. XIAO local also needs the [documented toolchain](docs/TOOLCHAIN.md). Keep the firmware size guard enabled; the app shares Flash space with fixed model caches.
+For firmware changes, follow the [build guide](BUILD.md) for the board you changed. XIAO local also needs the [documented toolchain](TOOLCHAIN.md). Keep the firmware size guard enabled; the app shares Flash space with fixed model caches.
 
 Changes to inference, storage, or touch input also need testing on the affected board. If you don't have one, say so in the PR and ask for help testing. A successful build alone doesn't confirm hardware behavior.
 
@@ -31,7 +31,7 @@ Changes to inference, storage, or touch input also need testing on the affected 
 
 Fork the repository and make a branch for your change. In the PR, explain what was wrong, what you changed, and how you checked it. Mention anything you couldn't test. Include a regression test for a bug fix when practical.
 
-Keep credentials, board backups, model files, and build outputs out of the PR. Review any logs you share. The [privacy guide](docs/PRIVACY.md) explains what to leave out. From a clean source checkout, you can also run:
+Keep credentials, board backups, model files, and build outputs out of the PR. Review any logs you share. The [privacy guide](PRIVACY.md) explains what to leave out. From a clean source checkout, you can also run:
 
 ```sh
 uv run --no-project python -B tools/verify_release.py .
