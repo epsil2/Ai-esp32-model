@@ -10,6 +10,23 @@ For a first installation, follow [Run PocketGPT on ESP32-S3](ASSETS.md). It cove
 - The platform, framework libraries and Flash layout are pinned in `platformio.ini`.
 - Use the matching DevKit release package. `tools/verify_pack.py` checks its hashes, size and shared embedding/head layout.
 
+## DevKit serial test
+
+After completing the [DevKit installation](ASSETS.md#devkit), you can check one reply over USB. This script is for the 32 MB Flash DevKit firmware. Use the [touchscreen instructions](ASSETS.md#5-chat-on-the-touchscreen) to check XIAO.
+
+From the repository root, with the installation guide's Python environment active and `POCKETGPT_PORT` set, close other serial monitors and run:
+
+```sh
+python -m pip install -r requirements.txt
+python tools/serial_test.py --port "$POCKETGPT_PORT" --output serial-results/hello --hello-only
+```
+
+Reset the DevKit after starting the command, within 60 seconds. The script waits for the boot prompt, sends `hello` and allows up to 180 seconds for a reply. It prints `hello passed` on success. Use a new output folder for each run; an existing folder is rejected to protect previous results. Omit `--hello-only` to run all five prompts.
+
+The output folder contains `boot.txt` and, once a reply completes, `results.json`. Each completed response records its prompt, transcript, elapsed time, `ok` and `error`. A failed validation saves the response and stops the test before any later prompts. A timeout raises an error; the unfinished response is not saved by this script.
+
+Passing requires a nonempty reply, a positive token count and no reported inference errors. It does not verify whether the answer is factually correct. Review logs for private details before sharing them.
+
 ## XIAO local keyboard — built and serial-tested on hardware
 
 - Hardware: **XIAO ESP32-S3, 8 MB Flash / 8 MB PSRAM**, Seeed Round Display and microSD.

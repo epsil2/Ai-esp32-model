@@ -14,7 +14,7 @@ Small fixes, clearer docs, and bug reports are welcome. Keep each pull request f
 
 You can work on docs and Python tools without a board or model weights. The unit tests use Python's standard library.
 
-From the repository root, with uv installed, run:
+From the repository root, with [uv installed](https://docs.astral.sh/uv/getting-started/installation/), run:
 
 ```sh
 uv run --no-project python -B -m unittest discover -s tests -v

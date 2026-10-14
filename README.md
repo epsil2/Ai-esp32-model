@@ -55,10 +55,11 @@ The [network interface](docs/NETWORK_SETUP.md) uses the same XIAO/display hardwa
 
 ## Serial testing
 
-The serial test requires a nonempty reply and generation statistics with a positive token count. Explicit inference failures or incomplete responses make the command exit with an error. Completed response transcripts are saved in `results.json` with `ok` and `error` fields before validation errors are raised; later prompts are not sent after a failure. Passing confirms generation completed, not that the answer is factually correct.
+After installing PocketGPT on a DevKit, follow the [USB test instructions](docs/BUILD.md#devkit-serial-test) to send a prompt and save the result. The test checks for a nonempty reply, a positive token count and no reported inference errors. Passing confirms generation completed, not that the answer is factually correct.
 
 ## Reference
 
+- [Contributing and reporting bugs](CONTRIBUTING.md)
 - [Build reference](docs/BUILD.md) · [Validation results](docs/RELEASE_STATUS.md)
 - [Data sources](docs/DATA_PROVENANCE.md) · [Third-party notices](docs/THIRD_PARTY.md) · [Privacy](docs/PRIVACY.md)
 - [Code license](LICENSE) · [Model license](MODEL_LICENSE) · [License scope](LICENSE_STATUS.md)

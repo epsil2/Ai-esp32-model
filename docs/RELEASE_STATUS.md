@@ -1,6 +1,6 @@
 # Validation results
 
-Updated 2026-10-13. Firmware source is in this repository; trained model/tokenizer packages are in [Releases](https://github.com/mmm1712/Local_AI_esp32/releases/tag/v0.1.0-model-assets). Start with the [installation guide](ASSETS.md).
+Updated 2026-10-14. Firmware source is in this repository; trained model/tokenizer packages are in [Releases](https://github.com/mmm1712/Local_AI_esp32/releases/tag/v0.1.0-model-assets). Start with the [installation guide](ASSETS.md).
 
 ## Recorded checks
 
@@ -12,9 +12,10 @@ Updated 2026-10-13. Firmware source is in this repository; trained model/tokeniz
 | XIAO network firmware | Compile-checked: 892,941 bytes Flash and 48,240 bytes static RAM; Gemini/Ollama hardware connectivity was not tested |
 | DevKit model package | Hashes, size, footer and shared-matrix checks passed |
 | XIAO model package | Flash/cache hashes, 84 matrix placements and offline cache assembly checked |
-| Source checks | Nine tests passed; 28 Python files parsed; local Markdown links checked |
+| Source checks (2026-10-14) | All 16 tests passed; 29 Python files parsed; local Markdown links checked |
+| DevKit serial validator (2026-10-14) | Seven automated tests use a simulated serial connection; four saved hardware response transcripts pass the updated validator |
 
-Build checks used Apple Silicon macOS. Hardware recordings describe the tested builds; later source naming/comment cleanup and documentation changes were not new hardware tests. No board was flashed for the model asset release.
+Build checks used Apple Silicon macOS; firmware sizes above are retained from the earlier build checks. Hardware recordings describe the tested builds; later source naming/comment cleanup and documentation changes were not new hardware tests. The 2026-10-14 source and serial-validator checks ran on the computer without opening a physical board connection. No board was flashed for the model asset release.
 
 ## Hardware evidence
 
