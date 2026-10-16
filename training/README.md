@@ -99,18 +99,3 @@ These experiments are included for reference; they are separate from the main 30
 Original filenames are retained so imports and historical records remain traceable.
 
 </details>
-
-<details>
-<summary>Historical verification and source-file details</summary>
-
-The released SentencePiece tokenizer preserves the original vocabulary and normalization behavior, but training-path metadata was removed. Its file hash therefore differs from the original tokenizer hash expected by the historical runner. Downloading it alone does not satisfy the runner's original input checks. Do not bypass those checks to claim an exact reproduction.
-
-The retained update-zero checkpoint matched all 111 freshly initialized state tensors with seed 42 and had an empty optimizer. The final optimizer states recorded step 58,594, supporting random initialization for Base V2.
-
-- Original training script SHA256: `09f24315915bd301d9e83fc279fc955920c6674cf745d35b247fdd1d0377e76a`.
-- Historical final Base V2 checkpoint SHA256: `2cf3a7eb6a2ed8026fb98cec0da4895762ce8d9590f4108c30efa682d8c7c20f`.
-- [SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json) records original and published source hashes. Publication cleanup removed ordinary comments while preserving the Python syntax structure. The changed script hash matters when resuming checkpoints with source-binding checks.
-- The historical checkpoint reported PyTorch 2.13.0 on MPS. `requirements.txt` lists dependencies; it is not a recovered historical lockfile. Identical results across library versions and devices are not established.
-- The example commands above follow the original command-line parser; they are not a recovered shell-history transcript.
-
-</details>
